@@ -3,11 +3,14 @@ const projectConfig = require('./project.config')
 const path = require('path');
 
 const config = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: projectConfig.MODULE_NAME + '.js'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [

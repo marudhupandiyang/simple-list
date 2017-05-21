@@ -10,10 +10,13 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: projectConfig.MODULE_NAME + '.js'
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         use: {
           loader: 'babel-loader'
         }

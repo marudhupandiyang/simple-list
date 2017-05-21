@@ -30,6 +30,13 @@ class Example extends React.Component {
         title={`Updates available(${items.length})`}
         items={items}
         onItemClick={(item) => console.log(`Clicked item ${item.title}`)}
+        itemActionClick={(item) => {console.log(`Action clicked for ${item.title}`)}}
+        listAction={{
+          title: 'STOP',
+          action: () => {
+            console.log('Clicked on list action');
+          }
+        }}
       />
     );
   }

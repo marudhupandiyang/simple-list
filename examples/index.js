@@ -1,5 +1,11 @@
-var ex1 = require('./example1');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Example1 from './example1';
 
-module.exports ={
-  ex1: ex1,
-};
+var div = document.createElement('div');
+div.id = 'root';
+
+document.body.appendChild(div)
+ReactDOM.render(<Example1 />, div);
+
+

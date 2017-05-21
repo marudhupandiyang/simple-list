@@ -1,5 +1,5 @@
 {
-  "name": "simple-list",
+  "name": "awesome-react-list",
   "version": "0.0.1",
   "description": "A simple two lined list view with icon and action button",
   "main": "./dist/simple-list.js",

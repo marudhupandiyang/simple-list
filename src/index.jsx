@@ -7,9 +7,12 @@ const SimpleList = props => (
       <div className="list-title">
         {props.title}
       </div>
-      <div className="list-action">
-        <button> {props.listAction.title} </button>
-      </div>
+      {
+        props.listAction &&
+          (<div className="list-action">
+            <button> {props.listAction.title} </button>
+          </div>)
+      }
     </div>
   {
     props.items.map((item, index) => {

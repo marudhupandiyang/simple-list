@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Example1 from './example1';
+import Example1 from './ChecklistExample';
 
 var div = document.createElement('div');
 div.id = 'root';
